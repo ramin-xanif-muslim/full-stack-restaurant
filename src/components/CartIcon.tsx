@@ -8,6 +8,8 @@ import React, { useEffect } from "react";
 const CartIcon = () => {
   const { data: session, status } = useSession();
 
+  console.log("session",session)
+
   const { totalItems } = useCartStore();
 
   useEffect(() => {

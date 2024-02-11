@@ -62,21 +62,21 @@ const AddPage = () => {
     const item = (target.files as FileList)[0];
     setFile(item);
   };
-
+  
   const upload = async () => {
     const data = new FormData();
     data.append("file", file!);
     data.append("upload_preset", "restaurant");
-
-    const res = await fetch("https://api.cloudinary.com/v1_1/lamadev/image", {
+  
+    const res = await fetch("https://api.cloudinary.com/v1_1/dlbv0pl8t/image/upload", {
       method: "POST",
-      headers: { "Content-Type": "multipart/form-data" },
       body: data,
     });
-
+  
     const resData = await res.json();
     return resData.url;
   };
+  
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

@@ -41,6 +41,7 @@ const LoginPage = () => {
             />
             <span>Sign in with Google</span>
           </button>
+          <a target="_blank" href="https://wa.me/+9940707045553?text=Esselemunaleykum"><span>0707045553</span></a>
           <button className="flex gap-4 p-4 ring-1 ring-blue-100 rounded-md">
             <Image
               src="/facebook.png"

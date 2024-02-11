@@ -1,7 +1,6 @@
 import { prisma } from "@/utils/connect";
 import { NextRequest, NextResponse } from "next/server";
 
-
 // CHANGE THE STATUS OF AN ORDER
 export const PUT = async (
   req: NextRequest,
