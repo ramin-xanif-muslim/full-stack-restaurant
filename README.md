@@ -12,7 +12,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [${API_BASE}](${API_BASE}) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -22,8 +22,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+-   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
@@ -33,15 +33,15 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-
 # Prisma
+
 1. npm install prisma @prisma/client
 2. npx prisma init --datasource-provider postgresql
-   - create src/docker/docker-compose.yml file
-   - cd src/docker
-   - docker compose up
-   - in .env file: DATABASE_URL="postgresql://myuser:mypassword@localhost:5432/mydb?schema=public"
-3. after created in schema.prisma files model's 
-   - npx prisma migrate dev
-   - npx prisma studio
+    - create src/docker/docker-compose.yml file
+    - cd src/docker
+    - docker compose up
+    - in .env file: DATABASE_URL="postgresql://myuser:mypassword@localhost:5432/mydb?schema=public"
+3. after created in schema.prisma files model's
+    - npx prisma migrate dev
+    - npx prisma studio
 4. docker compose up
